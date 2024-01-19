@@ -9,13 +9,13 @@
   background: #fff;
   .gauche {
     padding: 10px 15px;
-    max-width: 70%;
+    min-width: 100%;
     ::first-letter {
       text-transform: capitalize;
     }
     h4 {
       font-weight: bold;
-      font-size: 15px;
+      font-size: 17px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -30,12 +30,13 @@
   .droite {
     display: flex;
     align-items: center;
-    transform: translateX(70px);
+    transform: translateX(-50px);
     transition: 0.5s;
     // width: 30%;
     p {
       height: 100%;
-      background-color: #d81b1b;
+      width: 50px;
+      background-color: #fff;
       font-weight: bold;
       padding-left: 10px;
       padding-right: 14px;
@@ -69,11 +70,11 @@
   .droiteCheck {
     display: flex;
     align-items: center;
-    transform: translateX(0);
+    transform: translateX(-120px);
     transition: 0.5s;
     p {
       height: 100%;
-      background-color: #d31212;
+      background-color: #fff;
       font-weight: bold;
       padding-right: 14px;
       padding-left: 10px;
