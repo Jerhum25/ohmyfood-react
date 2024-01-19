@@ -1,0 +1,13 @@
+.cardsFonctionnement {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .cardsFonctionnement {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,114 @@
+.cardMenu {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px #bbb;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px auto;
+  width: 60%;
+  background: #fff;
+  .gauche {
+    padding: 10px 15px;
+    max-width: 70%;
+    ::first-letter {
+      text-transform: capitalize;
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p {
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .droite {
+    display: flex;
+    align-items: center;
+    transform: translateX(70px);
+    transition: 0.5s;
+    // width: 30%;
+    p {
+      height: 100%;
+      background-color: #d81b1b;
+      font-weight: bold;
+      padding-left: 10px;
+      padding-right: 14px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .coche {
+      width: 70px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #99e2d0;
+      font-size: 22px;
+      i {
+        width: 33px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: #99e2d0;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: 0.5s;
+      }
+    }
+  }
+  .droiteCheck {
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+    transition: 0.5s;
+    p {
+      height: 100%;
+      background-color: #d31212;
+      font-weight: bold;
+      padding-right: 14px;
+      padding-left: 10px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .coche {
+      width: 70px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #99e2d0;
+      font-size: 22px;
+      i {
+        width: 33px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: #99e2d0;
+        border-radius: 20px;
+        font-weight: bold;
+        transform: rotate(-360deg);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cardMenu {
+    width: 90%;
+  }
+}

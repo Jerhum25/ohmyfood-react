@@ -1,0 +1,39 @@
+.cardFonctionnement{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgrey;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 5px 5px 5px #a0a0a0;
+        background-color: #efe6fa;
+        i{
+            color: #9356DC;
+        }
+    }
+    .pastille{
+        background: #9356DC;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        position: absolute;
+        left: -10px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    i{
+        color: grey;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    p{
+        font-size: 20px;
+    }
+}

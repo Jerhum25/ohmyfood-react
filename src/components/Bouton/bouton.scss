@@ -1,0 +1,20 @@
+.bouton{
+    border: none;
+    padding: 15px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 5px 5px 5px lightgrey;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    width: fit-content;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 5px 5px 5px #a0a0a0;
+        opacity: .8;
+    }
+    &:active{
+        transform: translate(.5px, .5px);
+        box-shadow: 4px 4px 4px #a0a0a0;
+
+    }
+}

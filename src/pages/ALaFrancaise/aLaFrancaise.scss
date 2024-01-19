@@ -1,0 +1,83 @@
+.alafrancaise {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #f2f2f2;
+  img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+    background: #f2f2f2;
+    position: relative;
+    top: -40px;
+    h2 {
+      font-family: "Shrikhand-regular";
+      font-size: 30px;
+      font-weight: normal;
+      padding-left: 10%;
+    }
+    i {
+      font-size: 30px;
+      color: #f2f2f2;
+      text-shadow: 0px 0px 2px #000;
+      transition: 0.4s;
+      padding-right: 10%;
+    }
+    .heartCheck {
+      font-size: 30px;
+      color: #fff;
+      text-shadow: none;
+      transition: 0.4s;
+      background: linear-gradient(#ff79da, #9356dc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  h3 {
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px auto 10px auto;
+    width: 60%;
+    font-weight: normal;
+    font-size: 17px;
+    &::after {
+      content: "";
+      background: #99e2d0;
+      width: 40px;
+      height: 3px;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      display: inline-block;
+    }
+  }
+  > :nth-last-child(1) {
+    align-self: center;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .ledelicedessens{
+    img{
+      height: 200px;
+    }
+    .titre{
+      width: 90%;
+      h2, i{
+        padding: 0;
+      }
+    }
+    h3{
+      width: 90%;
+    }
+  }
+}
