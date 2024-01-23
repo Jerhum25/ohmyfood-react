@@ -3,7 +3,6 @@ import "./cardsRestaurants.scss";
 import CardRestaurant from "../CardRestaurant/CardRestaurant";
 
 function CardsRestaurants(props) {
-    
   return (
     <div className="cardsRestaurants">
       <CardRestaurant

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./leDeliceDesSens.scss";
-import CardMenu from "../../components/CardMenu/CardMenu";
 import Bouton from "../../components/Bouton/Bouton";
+import CardMenu from "../../components/CardMenu/CardMenu";
+import "./leDeliceDesSens.scss";
 
 function LeDeliceDesSens(props) {
   const [isCheck, setIsCheck] = useState(false);
@@ -18,7 +18,12 @@ function LeDeliceDesSens(props) {
       />
       <div className="titre">
         <h2>Le délice des sens</h2>
-        <i className={isCheck ? "fa-solid fa-heart heartCheck": "fa-solid fa-heart"} onClick={handleClick}></i>
+        <i
+          className={
+            isCheck ? "fa-solid fa-heart heartCheck" : "fa-solid fa-heart"
+          }
+          onClick={handleClick}
+        ></i>
       </div>
       <h3>entrées</h3>
       <CardMenu
@@ -53,17 +58,13 @@ function LeDeliceDesSens(props) {
         prix="44"
       />
       <h3>desserts</h3>
-      <CardMenu intitule="Farandole de desserts" description="Du chef" prix="18" />
       <CardMenu
-        intitule="Crème brulée"
-        description="Revisitée"
-        prix="22"
+        intitule="Farandole de desserts"
+        description="Du chef"
+        prix="18"
       />
-      <CardMenu
-        intitule="Tiramisu"
-        description="À la noisette"
-        prix="23"
-      />
+      <CardMenu intitule="Crème brulée" description="Revisitée" prix="22" />
+      <CardMenu intitule="Tiramisu" description="À la noisette" prix="23" />
       <Bouton titre="Commander" />
     </div>
   );

@@ -1,0 +1,44 @@
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes rotation2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.loadingSpinner {
+  border-bottom: 20px solid #9356dc;
+  border-top: 20px solid #ff79da;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: rotation1 1.5s linear 3 backwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background-clip: padding-box;
+  background: #fff;
+  img {
+    width: 150px;
+    position: absolute;
+    animation: rotation2 0.75s linear 6 backwards;
+  }
+}
