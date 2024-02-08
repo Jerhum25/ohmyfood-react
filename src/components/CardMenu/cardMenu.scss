@@ -7,6 +7,7 @@
   margin: 10px auto;
   width: 60%;
   background: #fff;
+  animation: cardVisibility 1s backwards;
   .gauche {
     padding: 10px 15px;
     min-width: 100%;
@@ -111,5 +112,16 @@
 @media screen and (max-width: 576px) {
   .cardMenu {
     width: 90%;
+  }
+}
+
+@keyframes cardVisibility {
+  from {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }

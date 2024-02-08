@@ -1,20 +1,21 @@
-.bouton{
-    border: none;
-    padding: 15px;
-    background: linear-gradient(#FF79DA, #9356DC);
-    box-shadow: 5px 5px 5px lightgrey;
-    border-radius: 30px;
-    color: #fff;
-    font-size: 18px;
-    width: fit-content;
-    cursor: pointer;
-    &:hover{
-        box-shadow: 5px 5px 5px #a0a0a0;
-        opacity: .8;
-    }
-    &:active{
-        transform: translate(.5px, .5px);
-        box-shadow: 4px 4px 4px #a0a0a0;
+.bouton {
+  border: none;
+  padding: 15px;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 5px 5px 5px lightgrey;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  width: fit-content;
+  cursor: pointer;
+  animation: cardVisibility 1s 5.4s backwards;
 
-    }
+  &:hover {
+    box-shadow: 5px 5px 5px #a0a0a0;
+    opacity: 0.8;
+  }
+  &:active {
+    transform: translate(0.5px, 0.5px);
+    box-shadow: 4px 4px 4px #a0a0a0;
+  }
 }

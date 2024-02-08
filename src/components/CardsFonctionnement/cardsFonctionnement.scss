@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   gap: 30px;
   margin-top: 20px;
+  animation: cardVisibility 1s 5.6s backwards;
 }
 
 @media screen and (max-width: 768px) {
