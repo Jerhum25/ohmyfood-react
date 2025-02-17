@@ -19,7 +19,7 @@ function CardRestaurant({ src, nom, localisation, link }) {
       </Link>
       <i
         className={
-          isCheck ? "fa-solid fa-heart heartCheck" : "fa-solid fa-heart"
+          isCheck ? "fas fa-heart heartCheck" : "fas fa-heart"
         }
         onClick={handleClick}
       ></i>

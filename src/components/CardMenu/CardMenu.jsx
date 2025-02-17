@@ -17,7 +17,7 @@ function CardMenu({ intitule, description, prix }) {
       <div className={isCheck ? "droiteCheck" : "droite"}>
         <p>{prix}€</p>
         <div className="coche">
-          <i className="fa-solid fa-check"></i>
+          <i className="fas fa-check"></i>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ function LaPaletteDuGout(props) {
       <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
       <div className="titre">
         <h2>La palette du gout</h2>
-        <i className={isCheck ? "fa-solid fa-heart heartCheck": "fa-solid fa-heart"} onClick={handleClick}></i>
+        <i className={isCheck ? "fas fa-heart heartCheck": "fas fa-heart"} onClick={handleClick}></i>
       </div>
       <h3>entrées</h3>
       <CardMenu

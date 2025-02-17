@@ -20,7 +20,7 @@ function LeDeliceDesSens(props) {
         <h2>Le délice des sens</h2>
         <i
           className={
-            isCheck ? "fa-solid fa-heart heartCheck" : "fa-solid fa-heart"
+            isCheck ? "fas fa-heart heartCheck" : "fas fa-heart"
           }
           onClick={handleClick}
         ></i>

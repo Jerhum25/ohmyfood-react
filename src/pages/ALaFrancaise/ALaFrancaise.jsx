@@ -20,7 +20,7 @@ function ALaFrancaise(props) {
         <h2>À la française</h2>
         <i
           className={
-            isCheck ? "fa-solid fa-heart heartCheck" : "fa-solid fa-heart"
+            isCheck ? "fas fa-heart heartCheck" : "fas fa-heart"
           }
           onClick={handleClick}
         ></i>

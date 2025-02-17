@@ -18,7 +18,7 @@ function LaNoteEnchantee(props) {
       />
       <div className="titre">
         <h2>La note enchantée</h2>
-        <i className={isCheck ? "fa-solid fa-heart heartCheck": "fa-solid fa-heart"} onClick={handleClick}></i>
+        <i className={isCheck ? "fas fa-heart heartCheck": "fas fa-heart"} onClick={handleClick}></i>
       </div>
       <h3>entrées</h3>
       <CardMenu
